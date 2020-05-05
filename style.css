@@ -13,7 +13,6 @@ h2 {
 body, html {
   padding: 0;
   margin: 0;
-  background-color: #fafbfd;
   width: 100%;
   height: 100%;
 }
@@ -249,8 +248,11 @@ section .caption h1 {
   margin-top: 60px;
 }
 .what-we-offer .row .col-md-4 .offer {
-  height: 300px;
+  height: 280px;
+  padding: 30px 20px;
+  width: 100%;
   text-align: center;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
 }
 .what-we-offer .row .col-md-4 .offer h5 {
   font-size: 18px;
@@ -263,6 +265,7 @@ section .caption h1 {
 
 .project, .project-page {
   padding-bottom: 50px;
+  margin-top: 70px;
 }
 .project .heade, .project-page .heade {
   width: 100%;
@@ -281,6 +284,9 @@ section .caption h1 {
   float: right;
   font-size: 12px;
   margin-top: 5px;
+}
+.project .row .col-md-4, .project-page .row .col-md-4, .project .row .col-md-3, .project-page .row .col-md-3 {
+  margin-bottom: 30px;
 }
 .project .row .col-md-4 .project-content, .project-page .row .col-md-4 .project-content, .project .row .col-md-3 .project-content, .project-page .row .col-md-3 .project-content {
   height: 400px;
@@ -303,9 +309,6 @@ section .caption h1 {
 .project .row .col-md-4 .project-content .texted span, .project-page .row .col-md-4 .project-content .texted span, .project .row .col-md-3 .project-content .texted span, .project-page .row .col-md-3 .project-content .texted span {
   color: #b92e34;
 }
-.project .nex, .project-page .nex {
-  margin-top: 30px;
-}
 
 .brand {
   background-color: transparent;
@@ -315,104 +318,48 @@ section .caption h1 {
 .brand h2 {
   font-size: 20px;
 }
-.brand .slide {
-  width: 60px;
+.brand #logos {
+  margin-top: 50px;
+}
+.brand #logos ul {
+  padding-left: 0;
+}
+.brand #logos li {
+  list-style: none;
+}
+.brand #logos li img {
   height: 60px;
-}
-.brand .slide img {
-  height: 60px;
   width: 60px;
 }
-.brand .slick-slide {
-  margin: 0px 20px;
-}
-.brand .slick-slide img {
-  width: 100%;
-}
-.brand .slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-.brand .slick-list {
-  position: relative;
-  display: block;
+.brand #logos .suga-container {
+  background: transparent;
+  padding: 0.2em;
+  max-width: 100%;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
+  border: 2px solid #000;
+  margin: 5em auto;
+  border-radius: 5px;
 }
-.brand .slick-list:focus {
-  outline: none;
+.brand #logos .suga-slider-wrap {
+  overflow: hidden;
+  margin: 1em;
 }
-.brand .slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
+.brand #logos .suga-slider-group {
+  width: 100% !important;
+  overflow: hidden;
 }
-.brand .slick-slider .slick-track,
-.brand .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.brand .slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-.brand .slick-track:before,
-.brand .slick-track:after {
+.brand #logos .suga-slider-group:before, .brand #logos .suga-slider-group:after {
+  content: " ";
   display: table;
-  content: "";
 }
-.brand .slick-track:after {
+.brand #logos .suga-slider-group:after {
   clear: both;
 }
-.brand .slick-loading .slick-track {
-  visibility: hidden;
-}
-.brand .slick-slide {
-  display: none;
+.brand #logos .suga-slide {
   float: left;
-  height: 100%;
-  min-height: 1px;
-}
-.brand [dir=rtl] .slick-slide {
-  float: right;
-}
-.brand .slick-slide img {
-  display: block;
-}
-.brand .slick-slide.slick-loading img {
-  display: none;
-}
-.brand .slick-slide.dragging img {
-  pointer-events: none;
-}
-.brand .slick-initialized .slick-slide {
-  display: block;
-}
-.brand .slick-loading .slick-slide {
-  visibility: hidden;
-}
-.brand .slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-.brand .slick-arrow.slick-hidden {
-  display: none;
+  position: relative;
+  margin-left: 0;
+  padding-right: 8px;
 }
 
 .contact .container {
@@ -549,15 +496,18 @@ footer .contact-info .container .row .col-md-6 .social-media i {
 .project-page .heade {
   margin-bottom: 15px;
 }
-.project-page .heade .container .row .col-md-9 button {
+.project-page .heade .container .row .col-md-9 a {
   background-color: transparent;
   border: none;
+  padding-top: 0;
   font-weight: 600;
   color: rgba(48, 61, 69, 0.6);
   margin-left: 30px;
 }
-.project-page .heade .container .row .col-md-9 button.active {
+.project-page .heade .container .row .col-md-9 a.active {
   color: #b92e34;
+  background: transparent;
+  border-radius: 0;
   border-bottom: 2px solid #b92e34;
 }
 .project-page .row .col-md-3 .project-content {
@@ -565,6 +515,90 @@ footer .contact-info .container .row .col-md-6 .social-media i {
 }
 .project-page .row .col-md-3 .project-content .image {
   height: 200px;
+}
+.project-page .row .col-md-3 .project-content p {
+  font-weight: 600;
+  color: #303d45;
+}
+
+.aboutUs .caption {
+  padding-top: 150px;
+}
+.aboutUs .caption .caption_text {
+  width: 55%;
+}
+
+.vision_mission {
+  margin-top: 80px;
+}
+.vision_mission .row .col-md-7 .text-one {
+  margin-top: 100px;
+}
+.vision_mission .row .col-md-7 .text-one h2 {
+  font-weight: 800;
+  color: #b92e34;
+}
+.vision_mission .row .col-md-7 .text-one p {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.vision_mission .row .col-md-5 .image-picture {
+  height: 500px;
+  width: 100%;
+  background-image: url(images/campaign/project-4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.our-client {
+  margin-top: 120px;
+}
+.our-client h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.our-client p {
+  color: #303d45;
+  font-size: 20px;
+  font-weight: 600;
+}
+.our-client .row {
+  margin-top: 40px;
+}
+.our-client .row .col-md-4 h3 {
+  font-size: 24px;
+}
+.our-client .row .col-md-4 p {
+  color: #b0b0b0;
+  margin-top: 15px;
+}
+
+.client-news {
+  background-color: #F1F1F1;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.client-news h2 {
+  margin-bottom: 20px;
+}
+.client-news .row .col-md-4 {
+  margin-bottom: 30px;
+}
+.client-news .row .col-md-4 .client-project {
+  width: 90%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cyber photo.JPG");
+}
+.client-news .row .col-md-4 .client-project p {
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
