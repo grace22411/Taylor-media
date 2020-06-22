@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Roboto:300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Laila:wght@300;400;500;600;700&display=swap");
 h2 {
   color: #303d45;
-  font-family: "Roboto", sans-serif;
   font-size: 21px;
   margin-bottom: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Laila", serif;
+}
+
+p, a, span {
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 * {
@@ -57,50 +64,55 @@ body, html {
   color: #444444;
 }
 
-section {
+header {
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/campaign/cover.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-section header {
-  width: 100%;
-  height: 80px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.93);
   padding: 15px 80px 0 80px;
 }
-section header .logo {
+header .logo {
   float: left;
-  margin-top: 10px;
   font-size: 20px;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Laila", serif;
   margin-left: 25px;
 }
-section header ul {
+header .logo img {
+  width: 200px;
+  height: 41px;
+}
+header ul {
   float: right;
   padding-top: 10px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Baloo Bhai 2", cursive;
 }
-section header ul li {
+header ul li {
   list-style: none;
   float: left;
   margin-right: 35px;
 }
-section header ul li a {
+header ul li a {
   color: #fff;
   font-size: 14px;
   transition: 0.2s ease-in-out;
   font-weight: 600;
 }
-section header ul li a:hover {
+header ul li a:hover {
   text-decoration: none;
   color: #b92e34;
 }
-section header i {
+header i {
   float: right;
   display: none !important;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/taylor-banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 @media only screen and (max-width: 320px) {
   section .top-header .col-md-2, section .top-header .col-md-3, section .top-header .col-md-4 {
@@ -166,7 +178,7 @@ section .caption {
 }
 section .caption .caption_text {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Laila", serif;
   text-align: left;
 }
 section .caption img {
@@ -228,85 +240,88 @@ section .caption h1 {
 }
 
 .what-we-offer {
-  padding-top: 40px;
-  margin-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #FAFAFA;
 }
 .what-we-offer .text {
   height: 50px;
 }
 .what-we-offer .text h2 {
   color: #303d45;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-weight: 500;
+  font-family: "Laila", serif;
+  font-size: 25px;
   margin-bottom: 0px;
+  text-align: center;
 }
 .what-we-offer .text p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Baloo Bhai 2", cursive;
 }
 .what-we-offer .row {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .what-we-offer .row .col-md-4 .offer {
   height: 280px;
-  padding: 30px 20px;
+  padding: 40px 20px;
   width: 100%;
+  border-radius: 4px;
   text-align: center;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
 }
 .what-we-offer .row .col-md-4 .offer h5 {
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-.what-we-offer .row .col-md-4 .offer p {
-  font-size: 14px;
-  font-family: "Nunito", sans-serif;
+.what-we-offer .row .col-md-4 .offer img {
+  height: 121px;
+  width: 150px;
 }
 
-.project, .project-page {
+.project {
   padding-bottom: 50px;
   margin-top: 70px;
 }
-.project .heade, .project-page .heade {
+.project .heade {
   width: 100%;
   height: 50px;
+  text-align: center;
 }
-.project .heade h2, .project-page .heade h2 {
+.project .heade h2 {
   float: left;
   font-size: 21px;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Laila", serif;
 }
-.project .heade a, .project-page .heade a {
-  color: #b92e34;
-}
-.project .heade a h3, .project-page .heade a h3 {
-  float: right;
-  font-size: 12px;
-  margin-top: 5px;
-}
-.project .row .col-md-4, .project-page .row .col-md-4, .project .row .col-md-3, .project-page .row .col-md-3 {
+.project .row .col-md-6, .project .row .col-md-3 {
   margin-bottom: 30px;
 }
-.project .row .col-md-4 .project-content, .project-page .row .col-md-4 .project-content, .project .row .col-md-3 .project-content, .project-page .row .col-md-3 .project-content {
-  height: 400px;
+.project .row .col-md-6 .project-content, .project .row .col-md-3 .project-content {
+  height: 350px;
   background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  font-family: "Nunito", sans-serif;
+  font-family: "Baloo Bhai 2", cursive;
 }
-.project .row .col-md-4 .project-content .image, .project-page .row .col-md-4 .project-content .image, .project .row .col-md-3 .project-content .image, .project-page .row .col-md-3 .project-content .image {
+.project .row .col-md-6 .project-content .image, .project .row .col-md-3 .project-content .image {
   background-image: url("images/Rectangle 5.png");
-  height: 300px;
+  height: 350px;
   background-size: cover;
+  position: relative;
 }
-.project .row .col-md-4 .project-content .texted, .project-page .row .col-md-4 .project-content .texted, .project .row .col-md-3 .project-content .texted, .project-page .row .col-md-3 .project-content .texted {
-  padding: 15px;
+.project .row .col-md-6 .project-content .image .texted, .project .row .col-md-3 .project-content .image .texted {
+  padding: 50px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  position: relative;
+  height: inherit;
 }
-.project .row .col-md-4 .project-content .texted p, .project-page .row .col-md-4 .project-content .texted p, .project .row .col-md-3 .project-content .texted p, .project-page .row .col-md-3 .project-content .texted p {
-  font-size: 14px;
-  margin-bottom: 0;
+.project .row .col-md-6 .project-content .image .texted p, .project .row .col-md-3 .project-content .image .texted p {
+  font-size: 16px;
+  bottom: 0;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
 }
-.project .row .col-md-4 .project-content .texted span, .project-page .row .col-md-4 .project-content .texted span, .project .row .col-md-3 .project-content .texted span, .project-page .row .col-md-3 .project-content .texted span {
+.project .row .col-md-6 .project-content .image .texted span, .project .row .col-md-3 .project-content .image .texted span {
   color: #b92e34;
 }
 
@@ -362,55 +377,146 @@ section .caption h1 {
   padding-right: 8px;
 }
 
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/contact.png);
+  widows: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .contact .container {
-  margin-top: 40px;
+  color: #fff;
+  padding-top: 200px;
 }
-.contact .container h2 {
-  margin: 15px 0;
+.contact .container h1 {
+  font-family: "Laila", serif;
+  font-size: 30px;
 }
-.contact .container .row .col-md-6 .image {
-  height: 400px;
+.contact .container p {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.contact-us {
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 40px 0;
+}
+.contact-us p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.contact-us .row {
+  margin-top: 30px;
+}
+.contact-us .row .col-md-7 form {
+  width: 80%;
+}
+.contact-us .row .col-md-7 form .form-group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.contact-us .row .col-md-7 form .form-group input {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.contact-us .row .col-md-7 form .form-group textarea {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  border-radius: 4px;
   width: 100%;
-  background-image: url(images/contact.png);
-  background-position: center;
-  background-size: cover;
+  height: 250px;
+}
+.contact-us .row .col-md-7 form button {
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  background-color: #000;
+}
+.contact-us .row .col-md-5 h2 {
+  font-family: "Laila", serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+.contact-us .row .col-md-5 p {
+  line-height: 25px;
+}
+.contact-us .row .col-md-5 a i {
+  transform: rotate(-30deg);
+}
+
+.client {
+  padding-top: 50px;
+}
+.client h2 {
+  font-family: "Laila", serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 footer {
   width: 100%;
   height: auto;
   background-color: #000;
-  font-family: "Nunito", sans-serif;
-  padding: 60px 0 30px 0;
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 60px 0 0px 0;
 }
-footer .container h2 {
-  font-size: 35px;
-  margin-bottom: 15px;
-  color: #fafbfd;
-}
-footer .container .row .col-md-7 input {
-  width: 100%;
-  height: 55px;
-  background-color: #fafbfd;
-  border: none;
-  padding-left: 15px;
-}
-footer .container .row .col-md-7 ::placeholder {
-  font-size: 15px;
-  font-weight: 500;
-}
-footer .container .row .col-md-5 a > button {
-  height: 55px;
-  width: 40%;
-  background-color: #b92e34;
+footer .container .row .col-md-9 {
   color: #fff;
+}
+footer .container .row .col-md-9 p i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+footer .container .row .col-md-9 p a {
+  color: #fff;
+}
+footer .container .row .col-md-9 a i {
+  transform: rotate(-30deg);
+}
+footer .container .row .col-md-3 a > button {
+  height: 40px;
+  width: 70%;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
   transition: 0.2s ease-in-out;
   border: none;
+  border-radius: 4px;
 }
-footer .container .row .col-md-5 button:hover {
+footer .container .row .col-md-3 button:hover {
   color: #b92e34;
   border: 2px solid #b92e34;
   background-color: transparent;
+}
+footer .container .row .col-md-3 a > i {
+  color: #000;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+footer .container .post-footer {
+  display: flex;
+  color: #fff;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #555;
+  margin-top: 40px;
+}
+footer .container .post-footer .right {
+  margin-left: auto;
+  font-weight: 600;
+}
+footer .container .post-footer p {
+  font-weight: 300;
+}
+footer .container .post-footer p a {
+  color: #fff;
 }
 footer .contact-info {
   border-top: 1px solid rgba(250, 251, 253, 0.3);
@@ -447,158 +553,120 @@ footer .contact-info .container .row .col-md-6 .social-media i {
   font-weight: 700;
 }
 
-.header {
-  width: 100%;
-  height: 70px;
-  background: #303d45;
-  padding: 15px 80px 0 80px;
+.aboutUs {
+  font-family: "Laila", serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.png);
+  height: 500px;
 }
-.header .logo {
-  float: left;
-  margin-top: 10px;
-  font-size: 20px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  margin-left: 25px;
-}
-.header ul {
-  float: right;
-  padding-top: 10px;
-  font-family: "Nunito", sans-serif;
-}
-.header ul li {
-  list-style: none;
-  float: left;
-  margin-right: 35px;
-}
-.header ul li a {
-  color: #fff;
-  font-size: 14px;
-  transition: 0.2s ease-in-out;
-  font-weight: 600;
-}
-.header ul li a:hover {
-  text-decoration: none;
-  color: #b92e34;
-}
-.header ul li .active {
-  color: #b92e34;
-  font-weight: 700;
-}
-.header i {
-  float: right;
-  display: none !important;
-}
-
-.project-page {
-  margin-top: 60px;
-}
-.project-page .heade {
-  margin-bottom: 15px;
-}
-.project-page .heade .container .row .col-md-9 a {
-  background-color: transparent;
-  border: none;
-  padding-top: 0;
-  font-weight: 600;
-  color: rgba(48, 61, 69, 0.6);
-  margin-left: 30px;
-}
-.project-page .heade .container .row .col-md-9 a.active {
-  color: #b92e34;
-  background: transparent;
-  border-radius: 0;
-  border-bottom: 2px solid #b92e34;
-}
-.project-page .row .col-md-3 .project-content {
-  height: 260px;
-}
-.project-page .row .col-md-3 .project-content .image {
-  height: 200px;
-}
-.project-page .row .col-md-3 .project-content p {
-  font-weight: 600;
-  color: #303d45;
-}
-
 .aboutUs .caption {
   padding-top: 150px;
-}
-.aboutUs .caption .caption_text {
-  width: 55%;
+  text-align: center;
 }
 
-.vision_mission {
-  margin-top: 80px;
+.content-about {
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 50px 0;
 }
-.vision_mission .row .col-md-7 .text-one {
-  margin-top: 100px;
-}
-.vision_mission .row .col-md-7 .text-one h2 {
-  font-weight: 800;
-  color: #b92e34;
-}
-.vision_mission .row .col-md-7 .text-one p {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  margin-top: 10px;
-}
-.vision_mission .row .col-md-5 .image-picture {
-  height: 500px;
-  width: 100%;
-  background-image: url(images/campaign/project-4.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.our-client {
-  margin-top: 120px;
-}
-.our-client h1 {
-  font-size: 25px;
-  font-weight: 700;
-}
-.our-client p {
-  color: #303d45;
-  font-size: 20px;
-  font-weight: 600;
-}
-.our-client .row {
-  margin-top: 40px;
-}
-.our-client .row .col-md-4 h3 {
-  font-size: 24px;
-}
-.our-client .row .col-md-4 p {
-  color: #b0b0b0;
-  margin-top: 15px;
+.content-about p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
 }
 
 .client-news {
-  background-color: #F1F1F1;
   padding: 40px 0;
-  margin-top: 50px;
 }
 .client-news h2 {
   margin-bottom: 20px;
+  text-align: center;
+  font-family: "Laila", serif;
 }
 .client-news .row .col-md-4 {
   margin-bottom: 30px;
 }
 .client-news .row .col-md-4 .client-project {
   width: 90%;
+  background: rgba(242, 242, 242, 0.48);
+  border-radius: 4px;
   height: 200px;
-  background-position: center;
-  background-size: cover;
-  padding: 0 20px;
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/cyber photo.JPG");
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.client-news .row .col-md-4 .client-project img {
+  margin-bottom: 20px;
 }
 .client-news .row .col-md-4 .client-project p {
-  color: white;
-  position: absolute;
-  bottom: 0;
+  color: #000000;
+  font-weight: 500;
+}
+
+.core {
+  background: rgba(242, 242, 242, 0.48);
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.core .container .row .col-md-12 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.core .container .row .col-md-12 img {
+  width: 40px;
+  height: 50px;
+}
+.core .container .row .col-md-12 div {
+  padding-left: 30px;
+}
+.core .container .row .col-md-12 h4 {
+  font-size: 14px;
+  font-family: "Laila", serif;
+  font-weight: 600;
+}
+.core .container .row .col-md-12 p {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 13px;
+}
+
+.project-title {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.project-title h1 {
+  margin-bottom: 0px;
+}
+.project-title p {
+  color: rgba(0, 0, 0, 0.58);
+  font-weight: 600;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/martell.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  padding: 30px;
+}
+.project-content .row .col-md-10 .topic {
+  display: flex;
+}
+.project-content .row .col-md-10 .topic h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.project-content .row .col-md-10 .topic img {
+  margin-left: auto;
+  margin-right: 70px;
+  margin-bottom: 10px;
+}
+.project-content .row .col-md-10 p {
+  font-weight: 400;
+  line-height: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
