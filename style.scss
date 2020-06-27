@@ -115,6 +115,76 @@ header{
     i{
         float: right;
         display: none !important;
+        color:#fff;
+    }
+    @media only screen and (max-width:320px){
+        
+        padding:15px 20px 0 20px;
+            ul{
+                display: none;
+            }
+            i{
+             display: block !important;
+             margin-right:30px;
+             margin-top:15px;
+             font-size:16px;
+             color:#fff;
+             cursor: pointer;
+         }
+      
+         
+          
+     }
+     @media only screen and (min-width:321px) and (max-width:540px){
+        // .container{
+        //     padding:0 30px;
+        // }
+        // .top-header{
+        //     .col-md-2,.col-md-3,.col-md-4{
+        //         display: none;;
+        //     }
+        // }
+        padding:15px 00px 0 00px;
+            img{
+                margin-left:0px;
+            }
+            ul{
+                display: none;
+            }
+            i{
+                display: block !important;
+                margin-right:20px;
+                margin-top:15px;
+                font-size:20px;
+                cursor: pointer;
+            }
+        
+         
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        // .container{
+        //     padding:0 50px;
+        // }
+        // .top-header{
+        //     .col-md-2,.col-md-3,.col-md-4{
+        //         display: none;;
+        //     }
+        // }
+        
+            img{
+                margin-left:15px;
+            }
+            ul{
+                display: none;
+            }
+            i{
+                display: block !important;
+                margin-right:20px;
+                margin-top:15px;
+                font-size:20px;
+                cursor: pointer;
+            }
+        
     }
 
 }
@@ -246,7 +316,7 @@ section{
             padding:0px 30px;
             .caption_text{
                 width:95%;
-                margin-top:90px;
+                padding-top:90px;
                 //padding-left:20px;
             }
             h1{
@@ -317,6 +387,45 @@ section{
             }
         }
     }
+    @media only screen and (max-width:320px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .row{
+            margin-top: 20px;
+            .col-md-4{
+                .offer{
+                    margin-bottom: 20px;;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .row{
+            margin-top: 20px;
+            .col-md-4{
+                padding:0 30px;
+                .offer{
+                    margin-bottom: 20px;;
+                    height:250px;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .row{
+            margin-top: 20px;
+            .col-md-4{
+                padding:0 50px;
+                .offer{
+                    margin-bottom: 20px;;
+                }
+            }
+        }
+    }
 }
 
 .project{
@@ -327,7 +436,7 @@ section{
         height:50px;
         text-align: center;
         h2{
-            float:left;
+            
             font-size:21px;
             text-align: center;
             font-weight: 500;
@@ -372,65 +481,49 @@ section{
             }
         }
     }
+    @media only screen and (max-width:320px){
+        margin-top: 50px;
+        .row{
+            .col-md-6{
+                .project-content{
+                    height:250px;
+                    .image{
+                        height:250px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        margin-top: 50px;
+        .row{
+            .col-md-6{
+                padding:0 30px;
+                .project-content{
+                    height:250px;
+                    .image{
+                        height:250px;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        margin-top: 50px;
+        .row{
+            .col-md-6{
+                padding:0 50px;
+                .project-content{
+                    height:280px;
+                    .image{
+                        height:250px;
+                    }
+                }
+            }
+        }
+    }
 }
  
-.brand{
-    background-color: transparent;
-    width:100%;
-    height:400px;
-    h2{
-        font-size:20px;
-    }
-    #logos{
-        margin-top: 50px;
-        ul{
-            padding-left: 0;
-        }
-        li {
-            list-style: none;
-            img{
-                height:60px;
-                width:60px;
-            }
-          }
-        .suga-container {
-            background: transparent;
-            padding: .2em;
-            max-width: 100%;
-            overflow: hidden;
-            border: 2px solid #000;
-            margin: 5em auto;
-            border-radius: 5px;
-          }
-          
-          .suga-slider-wrap {
-            overflow: hidden;
-            margin: 1em;
-          }
-          
-          .suga-slider-group {
-              width:100% !important;
-              overflow: hidden;
-            &:before,
-            &:after {
-              content: " ";
-              display: table;
-            }
-          
-            &:after {
-              clear: both;
-            }
-          }
-          
-          .suga-slide {
-            float: left;
-            position: relative;
-            margin-left: 0;
-            padding-right: 8px;
-          }
-    }
-
-}
 
 .contact{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/contact.png);
@@ -447,6 +540,25 @@ section{
         }
         p{
             font-family: $nunito-text;
+        }
+    }
+    @media only screen and (max-width:320px){
+        height:350px;
+        .container{
+            padding-top:150px;
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        height:350px;
+        .container{
+            padding-top:150px;
+        }
+    
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        height:380px;
+        .container{
+            padding-top:180px;
         }
     }
 }
@@ -512,14 +624,78 @@ section{
             }
         }
     }
+    @media only screen and (max-width:320px){
+        p{
+            line-height: 25px;;
+        }
+        .row{
+            .col-md-7{
+                padding: 0 15px;
+                form{
+                    width:100%;
+                }
+            }
+            .col-md-5{
+                margin-top: 30px;;
+            }
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        p{
+            line-height: 25px;;
+        }
+        .row{
+            .col-md-7{
+                padding: 0 15px;
+                form{
+                    width:100%;
+                }
+            }
+            .col-md-5{
+                margin-top: 30px;;
+            }
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        p{
+            line-height: 25px;;
+        }
+        .row{
+            .col-md-7{
+                padding: 0 15px;
+                form{
+                    width:100%;
+                }
+            }
+            .col-md-5{
+                margin-top: 30px;;
+            }
+        }
+    }
 }
 
 .client{
     padding-top:50px;
+    //margin-bottom: 50px;
     h2{
         font-family: $roboto-header;
         text-align: center;
         margin-bottom: 50px;
+    }
+    .row{
+        .col-md-4{
+            text-align: center;
+            margin-bottom: 40px;;
+        }
+    }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
     }
 }
 
@@ -594,41 +770,60 @@ footer{
             }
         }
     }
-    .contact-info{
-        border-top:1px solid rgba($ghost-white,0.3);
-        width:100%;
-        height:200px;
-        color:$ghost-white;
-        padding-top: 50px;
-        margin-top: 60px;
-        .container{
-            h3{
-                font-size:30px;
-                font-weight: 700;
-            }
-            .row{
-                .col-md-6{
-                    h3{
-                        font-size:17px;
-                        margin-bottom: 0;
-                    }
-                    a{
-                        font-size:18px;
-                        color:$theme-dark;
-                        font-weight: 700;
+    // .contact-info{
+    //     border-top:1px solid rgba($ghost-white,0.3);
+    //     width:100%;
+    //     height:200px;
+    //     color:$ghost-white;
+    //     padding-top: 50px;
+    //     margin-top: 60px;
+    //     .container{
+    //         h3{
+    //             font-size:30px;
+    //             font-weight: 700;
+    //         }
+    //         .row{
+    //             .col-md-6{
+    //                 h3{
+    //                     font-size:17px;
+    //                     margin-bottom: 0;
+    //                 }
+    //                 a{
+    //                     font-size:18px;
+    //                     color:$theme-dark;
+    //                     font-weight: 700;
 
-                    }
-                    .social-media{
-                        margin-top: 15px;
-                        i{
-                            color:$ghost-white;
-                            font-size:20px;
-                            margin-right: 20px;
-                        }
-                    }
+    //                 }
+    //                 .social-media{
+    //                     margin-top: 15px;
+    //                     i{
+    //                         color:$ghost-white;
+    //                         font-size:20px;
+    //                         margin-right: 20px;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    @media only screen and (max-width:320px){
+        padding:40px 0 0 0;
+        .container{
+            .col-md-9{
+                h3{
+                    font-size:20px;
                 }
             }
         }
+        .post-footer{
+            padding: 20px 15px 0 15px ;
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
     }
 }
 
@@ -646,6 +841,15 @@ footer{
         padding-top: 150px;
         text-align: center;
     }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
+    }
     
 }
 
@@ -656,6 +860,15 @@ footer{
         font-size:16px;
         font-weight: 500;
         line-height: 35px;
+    }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
     }
 }
 
@@ -689,6 +902,15 @@ footer{
             }
         }
     }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
+    }
 }
 
 .core{
@@ -720,6 +942,15 @@ footer{
             }
         }
     }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
+    }
 }
 
 //Project Details Starts
@@ -742,7 +973,7 @@ footer{
     background-position: center;
 }
 
-.project-content{
+.each-project-content{
     padding: 30px;
     .row{
         .col-md-10{
@@ -764,5 +995,14 @@ footer{
                 line-height: 35px;;
             }
         }
+    }
+    @media only screen and (max-width:320px){
+
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+
     }
 }
