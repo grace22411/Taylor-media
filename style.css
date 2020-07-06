@@ -108,7 +108,7 @@ header i {
 }
 @media only screen and (max-width: 320px) {
   header {
-    padding: 15px 20px 0 20px;
+    padding: 15px 0px 0 0px;
   }
   header ul {
     display: none;
@@ -141,6 +141,9 @@ header i {
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
+  header {
+    padding: 15px 200px 0 20px;
+  }
   header img {
     margin-left: 15px;
   }
@@ -152,6 +155,7 @@ header i {
     margin-right: 20px;
     margin-top: 15px;
     font-size: 20px;
+    margin-left: auto;
     cursor: pointer;
   }
 }
@@ -223,35 +227,51 @@ section {
 }
 section .caption {
   color: #fff;
-  padding-top: 200px;
+  padding-top: 150px;
   text-align: center;
 }
 section .caption .caption_text {
-  width: 100%;
-  font-family: "Laila", serif;
-  text-align: left;
+  width: 42%;
+  height: auto;
+  float: right;
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: right;
+  clear: both;
 }
-section .caption img {
-  margin-top: 170px;
-  width: 25px;
+section .caption .down {
+  width: 45%;
   height: 40px;
+  bottom: 0;
+  margin: 0 auto 100px auto;
+  color: #000;
+  position: absolute;
+  text-align: right;
+}
+section .caption .down i {
+  font-size: 30px;
   cursor: pointer;
 }
-section .caption h1 {
-  font-weight: 500;
-  font-size: 31px;
-  width: 70%;
+section .caption h2 {
+  font-weight: 400;
+  font-size: 28px;
+  text-align: right;
+  font-family: "Baloo Bhai 2", cursive !important;
+  line-height: 40px;
 }
 @media only screen and (max-width: 320px) {
   section .caption {
     padding-top: 20px;
   }
   section .caption .caption_text {
-    width: 95%;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 40px;
   }
-  section .caption h1 {
-    font-size: 25px;
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
+    font-size: 20px;
+    line-height: 30px;
   }
   section .caption p {
     font-size: 13px;
@@ -262,11 +282,15 @@ section .caption h1 {
     padding: 0px 30px;
   }
   section .caption .caption_text {
-    width: 95%;
-    padding-top: 90px;
+    width: 100%;
+    padding-top: 50px;
   }
-  section .caption h1 {
-    font-size: 25px;
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
+    font-size: 23px;
+    line-height: 30px;
   }
   section .caption p {
     font-size: 13px;
@@ -281,7 +305,10 @@ section .caption h1 {
     width: 95%;
     margin-top: 150px;
   }
-  section .caption h1 {
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
     font-size: 25px;
   }
   section .caption p {
@@ -499,38 +526,38 @@ section .caption h1 {
   }
 }
 
-.contact-us {
+.theForm {
   font-family: "Baloo Bhai 2", cursive;
   padding: 40px 0;
 }
-.contact-us p {
+.theForm p {
   font-size: 16px;
   font-weight: 500;
   line-height: 35px;
 }
-.contact-us .row {
+.theForm .row {
   margin-top: 30px;
 }
-.contact-us .row .col-md-7 form {
+.theForm .row .col-md-7 form {
   width: 80%;
 }
-.contact-us .row .col-md-7 form .form-group label {
+.theForm .row .col-md-7 form .form-group label {
   font-size: 14px;
   margin-bottom: 4px;
 }
-.contact-us .row .col-md-7 form .form-group input {
+.theForm .row .col-md-7 form .form-group input {
   border: 1px solid rgba(0, 0, 0, 0.37);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.contact-us .row .col-md-7 form .form-group textarea {
+.theForm .row .col-md-7 form .form-group textarea {
   border: 1px solid rgba(0, 0, 0, 0.37);
   box-sizing: border-box;
   border-radius: 4px;
   width: 100%;
   height: 250px;
 }
-.contact-us .row .col-md-7 form button {
+.theForm .row .col-md-7 form button {
   color: #fff;
   width: 100%;
   border-radius: 4px;
@@ -539,58 +566,97 @@ section .caption h1 {
   height: 45px;
   background-color: #000;
 }
-.contact-us .row .col-md-5 h2 {
+.theForm .row .col-md-5 h2 {
   font-family: "Laila", serif;
   font-size: 18px;
   text-align: center;
   margin: 10px 0;
 }
-.contact-us .row .col-md-5 p {
+.theForm .row .col-md-5 p {
   line-height: 25px;
 }
-.contact-us .row .col-md-5 a i {
+.theForm .row .col-md-5 a i {
   transform: rotate(-30deg);
 }
 @media only screen and (max-width: 320px) {
-  .contact-us p {
-    line-height: 25px;
+  .theForm {
+    padding-top: 20px;
   }
-  .contact-us .row .col-md-7 {
+  .theForm p {
+    line-height: 25px;
     padding: 0 15px;
   }
-  .contact-us .row .col-md-7 form {
+  .theForm .row {
+    padding: 0 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
     width: 100%;
   }
-  .contact-us .row .col-md-5 {
+  .theForm .row .col-md-5 {
     margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
-  .contact-us p {
+  .theForm {
+    padding-top: 25px;
+  }
+  .theForm p {
     line-height: 25px;
+    padding: 0 30px;
   }
-  .contact-us .row .col-md-7 {
-    padding: 0 15px;
+  .theForm .row {
+    padding: 0 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .contact-us .row .col-md-7 form {
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
     width: 100%;
   }
-  .contact-us .row .col-md-5 {
+  .theForm .row .col-md-5 {
     margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
-  .contact-us p {
+  .theForm {
+    padding-top: 25px;
+  }
+  .theForm p {
     line-height: 25px;
+    padding: 0 50px;
   }
-  .contact-us .row .col-md-7 {
-    padding: 0 15px;
+  .theForm .row {
+    padding: 0 50px;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .contact-us .row .col-md-7 form {
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
     width: 100%;
   }
-  .contact-us .row .col-md-5 {
+  .theForm .row .col-md-5 {
     margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
   }
 }
 
@@ -606,6 +672,132 @@ section .caption h1 {
   text-align: center;
   margin-bottom: 40px;
 }
+.testimony {
+  height: 520px;
+  background-color: #FAFAFA;
+  padding-top: 40px;
+}
+.testimony h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.testimony .each-testi {
+  width: 35%;
+  margin: auto;
+  height: auto;
+  /* Slideshow container */
+  /* Slides */
+  /* The dot/bullet/indicator container */
+  /* The dots/bullets/indicators */
+  /* Add a background color to the active dot/circle */
+}
+.testimony .each-testi .slideshow-container {
+  position: relative;
+  background: #fff;
+}
+.testimony .each-testi .mySlides {
+  display: none;
+  padding: 40px 50px;
+  font-weight: 500;
+  text-align: justify;
+}
+.testimony .each-testi .mySlides p {
+  font-size: 14px;
+}
+.testimony .each-testi .mySlides i {
+  margin-left: -30px;
+  font-size: 30px;
+}
+.testimony .each-testi .mySlides h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+.testimony .each-testi .mySlides h2 span {
+  font-weight: 400;
+}
+.testimony .each-testi .dot-container {
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+.testimony .each-testi .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.testimony .each-testi .active, .testimony .each-testi .dot:hover {
+  background-color: #000;
+}
+@media only screen and (max-width: 320px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 90%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 85%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 70%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+
 footer {
   width: 100%;
   height: auto;
@@ -673,10 +865,51 @@ footer .container .post-footer p a {
   footer .container .col-md-9 h3 {
     font-size: 20px;
   }
-  footer .post-footer {
-    padding: 20px 15px 0 15px;
+  footer .post-footer p {
+    padding: 0 15px;
+    font-size: 12px;
+    display: inline-block;
   }
 }
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  footer {
+    padding: 30px 0 0 0;
+  }
+  footer .container .col-md-9, footer .container .col-md-3 {
+    padding: 0 30px;
+  }
+  footer .container .col-md-9 h3, footer .container .col-md-3 h3 {
+    font-size: 20px;
+  }
+  footer .container .col-md-3 {
+    margin-top: 20px;
+  }
+  footer .post-footer p {
+    padding: 0 30px;
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  footer {
+    padding: 30px 0 0 0;
+  }
+  footer .container .col-md-9, footer .container .col-md-3 {
+    padding: 0 50px;
+  }
+  footer .container .col-md-9 h3, footer .container .col-md-3 h3 {
+    font-size: 25px;
+  }
+  footer .container .col-md-3 {
+    margin-top: 20px;
+  }
+  footer .post-footer p {
+    padding: 0 50px;
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+
 .active {
   color: #b92e34;
   font-weight: 700;
@@ -691,6 +924,31 @@ footer .container .post-footer p a {
   padding-top: 150px;
   text-align: center;
 }
+@media only screen and (max-width: 320px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+
 .content-about {
   font-family: "Baloo Bhai 2", cursive;
   padding: 50px 0;
@@ -700,6 +958,34 @@ footer .container .post-footer p a {
   font-weight: 500;
   line-height: 35px;
 }
+@media only screen and (max-width: 320px) {
+  .content-about {
+    padding: 30px 15px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .content-about {
+    padding: 30px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .content-about {
+    padding: 30px 50px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+
 .client-news {
   padding: 40px 0;
 }
@@ -727,6 +1013,37 @@ footer .container .post-footer p a {
   color: #000000;
   font-weight: 500;
 }
+@media only screen and (max-width: 320px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 {
+    padding: 0 30px;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 {
+    padding: 0 50px;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+
 .core {
   background: rgba(242, 242, 242, 0.48);
   width: 100%;
