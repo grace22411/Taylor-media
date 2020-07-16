@@ -1,0 +1,1117 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Laila:wght@300;400;500;600;700&display=swap");
+h2 {
+  color: #303d45;
+  font-size: 21px;
+  margin-bottom: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Laila", serif;
+}
+
+p, a, span {
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.modal-content .inn {
+  background-color: #fff;
+  height: 500px;
+  float: right;
+  width: 80%;
+  padding: 20px 0px;
+}
+.modal-content .cancel {
+  height: 30px;
+  width: 100%;
+  padding: 10px 30px 30px 0;
+}
+.modal-content .cancel .fa-times {
+  font-size: 20px;
+  float: right;
+}
+.modal-content ul {
+  margin: auto;
+  padding: 0;
+}
+.modal-content ul li {
+  list-style: none;
+  padding: 15px 30px;
+  border-bottom: 1px solid #f7f7f7;
+}
+.modal-content ul li a {
+  color: #444444;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.93);
+  padding: 15px 80px 0 80px;
+}
+header .logo {
+  float: left;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Laila", serif;
+  margin-left: 25px;
+}
+header .logo img {
+  width: 200px;
+  height: 41px;
+}
+header ul {
+  float: right;
+  padding-top: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+header ul li {
+  list-style: none;
+  float: left;
+  margin-right: 35px;
+}
+header ul li a {
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+header ul li a:hover {
+  text-decoration: none;
+  color: #b92e34;
+}
+header i {
+  float: right;
+  display: none !important;
+  color: #fff;
+}
+@media only screen and (max-width: 320px) {
+  header {
+    padding: 15px 0px 0 0px;
+  }
+  header ul {
+    display: none;
+  }
+  header i {
+    display: block !important;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  header {
+    padding: 15px 0px 0 0px;
+  }
+  header img {
+    margin-left: 0px;
+  }
+  header ul {
+    display: none;
+  }
+  header i {
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  header {
+    padding: 15px 200px 0 20px;
+  }
+  header img {
+    margin-left: 15px;
+  }
+  header ul {
+    display: none;
+  }
+  header i {
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/taylor-banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 320px) {
+  section .top-header .col-md-2, section .top-header .col-md-3, section .top-header .col-md-4 {
+    display: none;
+  }
+  section header ul {
+    display: none;
+  }
+  section header i {
+    display: block !important;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  section .container {
+    padding: 0 30px;
+  }
+  section .top-header .col-md-2, section .top-header .col-md-3, section .top-header .col-md-4 {
+    display: none;
+  }
+  section header img {
+    margin-left: 15px;
+  }
+  section header ul {
+    display: none;
+  }
+  section header i {
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  section .container {
+    padding: 0 50px;
+  }
+  section .top-header .col-md-2, section .top-header .col-md-3, section .top-header .col-md-4 {
+    display: none;
+  }
+  section header img {
+    margin-left: 15px;
+  }
+  section header ul {
+    display: none;
+  }
+  section header i {
+    display: block !important;
+    margin-right: 20px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+section .caption {
+  color: #fff;
+  padding-top: 150px;
+  text-align: center;
+}
+section .caption .caption_text {
+  width: 42%;
+  height: auto;
+  float: right;
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: right;
+  clear: both;
+}
+section .caption .down {
+  width: 45%;
+  height: 40px;
+  bottom: 0;
+  margin: 0 auto 100px auto;
+  color: #000;
+  position: absolute;
+  text-align: right;
+}
+section .caption .down i {
+  font-size: 30px;
+  cursor: pointer;
+}
+section .caption h2 {
+  font-weight: 400;
+  font-size: 28px;
+  text-align: right;
+  font-family: "Baloo Bhai 2", cursive !important;
+  line-height: 40px;
+}
+@media only screen and (max-width: 320px) {
+  section .caption {
+    padding-top: 20px;
+  }
+  section .caption .caption_text {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  section .caption p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  section .caption {
+    padding: 0px 30px;
+  }
+  section .caption .caption_text {
+    width: 100%;
+    padding-top: 50px;
+  }
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  section .caption p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  section .caption {
+    padding-top: 25px;
+    padding: 0px 50px;
+  }
+  section .caption .caption_text {
+    width: 95%;
+    margin-top: 150px;
+  }
+  section .caption .down {
+    width: 50%;
+  }
+  section .caption h2 {
+    font-size: 25px;
+  }
+  section .caption p {
+    font-size: 13px;
+  }
+}
+
+.what-we-offer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #FAFAFA;
+}
+.what-we-offer .text {
+  height: 50px;
+}
+.what-we-offer .text h2 {
+  color: #303d45;
+  font-weight: 500;
+  font-family: "Laila", serif;
+  font-size: 25px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.what-we-offer .text p {
+  font-family: "Baloo Bhai 2", cursive;
+}
+.what-we-offer .row {
+  margin-top: 40px;
+}
+.what-we-offer .row .col-md-4 .offer {
+  height: 280px;
+  padding: 40px 20px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+}
+.what-we-offer .row .col-md-4 .offer h5 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.what-we-offer .row .col-md-4 .offer img {
+  height: 121px;
+  width: 150px;
+}
+@media only screen and (max-width: 320px) {
+  .what-we-offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .what-we-offer .row {
+    margin-top: 20px;
+  }
+  .what-we-offer .row .col-md-4 .offer {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .what-we-offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .what-we-offer .row {
+    margin-top: 20px;
+  }
+  .what-we-offer .row .col-md-4 {
+    padding: 0 30px;
+  }
+  .what-we-offer .row .col-md-4 .offer {
+    margin-bottom: 20px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .what-we-offer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .what-we-offer .row {
+    margin-top: 20px;
+  }
+  .what-we-offer .row .col-md-4 {
+    padding: 0 50px;
+  }
+  .what-we-offer .row .col-md-4 .offer {
+    margin-bottom: 20px;
+  }
+}
+
+.project {
+  padding-bottom: 50px;
+  margin-top: 70px;
+}
+.project .heade {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.project .heade h2 {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Laila", serif;
+}
+.project .row .col-md-6, .project .row .col-md-3 {
+  margin-bottom: 30px;
+}
+.project .row .col-md-6 .project-content, .project .row .col-md-3 .project-content {
+  height: 350px;
+  background-color: #fff;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.project .row .col-md-6 .project-content .image, .project .row .col-md-3 .project-content .image {
+  background-image: url("images/Rectangle 5.png");
+  height: 350px;
+  background-size: cover;
+  position: relative;
+}
+.project .row .col-md-6 .project-content .image .texted, .project .row .col-md-3 .project-content .image .texted {
+  padding: 50px 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  position: relative;
+  height: inherit;
+}
+.project .row .col-md-6 .project-content .image .texted p, .project .row .col-md-3 .project-content .image .texted p {
+  font-size: 16px;
+  bottom: 0;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+}
+.project .row .col-md-6 .project-content .image .texted span, .project .row .col-md-3 .project-content .image .texted span {
+  color: #b92e34;
+}
+@media only screen and (max-width: 320px) {
+  .project {
+    margin-top: 50px;
+  }
+  .project .row .col-md-6 .project-content {
+    height: 250px;
+  }
+  .project .row .col-md-6 .project-content .image {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .project {
+    margin-top: 50px;
+  }
+  .project .row .col-md-6 {
+    padding: 0 30px;
+  }
+  .project .row .col-md-6 .project-content {
+    height: 250px;
+  }
+  .project .row .col-md-6 .project-content .image {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .project {
+    margin-top: 50px;
+  }
+  .project .row .col-md-6 {
+    padding: 0 50px;
+  }
+  .project .row .col-md-6 .project-content {
+    height: 280px;
+  }
+  .project .row .col-md-6 .project-content .image {
+    height: 250px;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/contact.png);
+  widows: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.contact .container {
+  color: #fff;
+  padding-top: 200px;
+}
+.contact .container h1 {
+  font-family: "Laila", serif;
+  font-size: 30px;
+}
+.contact .container p {
+  font-family: "Baloo Bhai 2", cursive;
+}
+@media only screen and (max-width: 320px) {
+  .contact {
+    height: 350px;
+  }
+  .contact .container {
+    padding-top: 150px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .contact {
+    height: 350px;
+  }
+  .contact .container {
+    padding-top: 150px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .contact {
+    height: 380px;
+  }
+  .contact .container {
+    padding-top: 180px;
+  }
+}
+
+.theForm {
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 40px 0;
+}
+.theForm p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.theForm .row {
+  margin-top: 30px;
+}
+.theForm .row .col-md-7 form {
+  width: 80%;
+}
+.theForm .row .col-md-7 form .form-group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.theForm .row .col-md-7 form .form-group input {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.theForm .row .col-md-7 form .form-group textarea {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  height: 250px;
+}
+.theForm .row .col-md-7 form button {
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  background-color: #000;
+}
+.theForm .row .col-md-5 h2 {
+  font-family: "Laila", serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+.theForm .row .col-md-5 p {
+  line-height: 25px;
+}
+.theForm .row .col-md-5 a i {
+  transform: rotate(-30deg);
+}
+@media only screen and (max-width: 320px) {
+  .theForm {
+    padding-top: 20px;
+  }
+  .theForm p {
+    line-height: 25px;
+    padding: 0 15px;
+  }
+  .theForm .row {
+    padding: 0 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
+    width: 100%;
+  }
+  .theForm .row .col-md-5 {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .theForm {
+    padding-top: 25px;
+  }
+  .theForm p {
+    line-height: 25px;
+    padding: 0 30px;
+  }
+  .theForm .row {
+    padding: 0 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
+    width: 100%;
+  }
+  .theForm .row .col-md-5 {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .theForm {
+    padding-top: 25px;
+  }
+  .theForm p {
+    line-height: 25px;
+    padding: 0 50px;
+  }
+  .theForm .row {
+    padding: 0 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .theForm .row .col-md-7 {
+    padding: 0;
+  }
+  .theForm .row .col-md-7 form {
+    width: 100%;
+  }
+  .theForm .row .col-md-5 {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .theForm .row .col-md-5 p {
+    padding: 0;
+  }
+}
+
+.client {
+  padding-top: 50px;
+}
+.client h2 {
+  font-family: "Laila", serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client .row .col-md-4 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.testimony {
+  height: auto;
+  background-color: #FAFAFA;
+  padding: 40px 0;
+}
+.testimony h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.testimony .each-testi {
+  width: 35%;
+  margin: auto;
+  height: auto;
+  /* Slideshow container */
+  /* Slides */
+  /* The dot/bullet/indicator container */
+  /* The dots/bullets/indicators */
+  /* Add a background color to the active dot/circle */
+}
+.testimony .each-testi .slideshow-container {
+  position: relative;
+  background: #fff;
+}
+.testimony .each-testi .mySlides {
+  display: none;
+  padding: 40px 50px;
+  font-weight: 500;
+  text-align: justify;
+}
+.testimony .each-testi .mySlides p {
+  font-size: 14px;
+}
+.testimony .each-testi .mySlides i {
+  margin-left: -30px;
+  font-size: 30px;
+}
+.testimony .each-testi .mySlides h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+.testimony .each-testi .mySlides h2 span {
+  font-weight: 400;
+}
+.testimony .each-testi .dot-container {
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+.testimony .each-testi .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.testimony .each-testi .active, .testimony .each-testi .dot:hover {
+  background-color: #000;
+}
+@media only screen and (max-width: 320px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 90%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 85%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .testimony {
+    height: auto;
+    padding: 40px 0;
+  }
+  .testimony h2 {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+  .testimony .each-testi {
+    width: 70%;
+  }
+  .testimony .each-testi .mySlides {
+    padding: 30px;
+  }
+  .testimony .each-testi .mySlides i {
+    margin-left: -10px;
+    font-size: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 60px 0 0px 0;
+}
+footer .container .row .col-md-9 {
+  color: #fff;
+}
+footer .container .row .col-md-9 p i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+footer .container .row .col-md-9 p a {
+  color: #fff;
+}
+footer .container .row .col-md-9 a i {
+  transform: rotate(-30deg);
+}
+footer .container .row .col-md-3 a > button {
+  height: 40px;
+  width: 70%;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  border: none;
+  border-radius: 4px;
+}
+footer .container .row .col-md-3 button:hover {
+  color: #b92e34;
+  border: 2px solid #b92e34;
+  background-color: transparent;
+}
+footer .container .row .col-md-3 a > i {
+  color: #000;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+footer .container .row .col-md-3 a .fa-facebook-f {
+  padding: 15px !important;
+}
+footer .container .post-footer {
+  display: flex;
+  color: #fff;
+  padding: 20px 0 0 0;
+  border-top: 1px solid #555;
+  margin-top: 40px;
+}
+footer .container .post-footer .right {
+  margin-left: auto;
+  font-weight: 600;
+}
+footer .container .post-footer p {
+  font-weight: 300;
+}
+footer .container .post-footer p a {
+  color: #fff;
+}
+@media only screen and (max-width: 320px) {
+  footer {
+    padding: 40px 0 0 0;
+  }
+  footer .container .col-md-9 h3 {
+    font-size: 20px;
+  }
+  footer .post-footer p {
+    padding: 0 15px;
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  footer {
+    padding: 30px 0 0 0;
+  }
+  footer .container .col-md-9, footer .container .col-md-3 {
+    padding: 0 30px;
+  }
+  footer .container .col-md-9 h3, footer .container .col-md-3 h3 {
+    font-size: 20px;
+  }
+  footer .container .col-md-3 {
+    margin-top: 20px;
+  }
+  footer .post-footer p {
+    padding: 0 30px;
+    font-size: 12px;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  footer {
+    padding: 30px 0 0 0;
+  }
+  footer .container .col-md-9, footer .container .col-md-3 {
+    padding: 0 50px;
+  }
+  footer .container .col-md-9 h3, footer .container .col-md-3 h3 {
+    font-size: 25px;
+  }
+  footer .container .col-md-3 {
+    margin-top: 20px;
+  }
+  footer .post-footer p {
+    padding: 0 50px;
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+
+.active {
+  color: #b92e34;
+  font-weight: 700;
+}
+
+.aboutUs {
+  font-family: "Laila", serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.png);
+  height: 500px;
+}
+.aboutUs .caption {
+  padding-top: 150px;
+  text-align: center;
+}
+@media only screen and (max-width: 320px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .aboutUs {
+    height: 300px;
+  }
+  .aboutUs .caption {
+    padding-top: 130px;
+  }
+}
+
+.content-about {
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 50px 0;
+}
+.content-about p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 35px;
+}
+@media only screen and (max-width: 320px) {
+  .content-about {
+    padding: 30px 15px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .content-about {
+    padding: 30px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .content-about {
+    padding: 30px 50px;
+  }
+  .content-about p {
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+
+.client-news {
+  padding: 40px 0;
+}
+.client-news h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Laila", serif;
+}
+.client-news .row .col-md-4 {
+  margin-bottom: 30px;
+}
+.client-news .row .col-md-4 .client-project {
+  width: 90%;
+  background: rgba(242, 242, 242, 0.48);
+  border-radius: 4px;
+  height: 200px;
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.client-news .row .col-md-4 .client-project img {
+  margin-bottom: 20px;
+}
+.client-news .row .col-md-4 .client-project p {
+  color: #000000;
+  font-weight: 500;
+}
+@media only screen and (max-width: 320px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 {
+    padding: 0 30px;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .client-news {
+    padding: 30px 0;
+  }
+  .client-news .row .col-md-4 {
+    padding: 0 50px;
+  }
+  .client-news .row .col-md-4 .client-project {
+    width: 100%;
+  }
+}
+
+.core {
+  background: rgba(242, 242, 242, 0.48);
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+.core .container .row .col-md-12 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.core .container .row .col-md-12 img {
+  width: 40px;
+  height: 50px;
+}
+.core .container .row .col-md-12 div {
+  padding-left: 30px;
+}
+.core .container .row .col-md-12 h4 {
+  font-size: 14px;
+  font-family: "Laila", serif;
+  font-weight: 600;
+}
+.core .container .row .col-md-12 p {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 13px;
+}
+.project-title {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+.project-title h1 {
+  margin-bottom: 0px;
+}
+.project-title p {
+  color: rgba(0, 0, 0, 0.58);
+  font-weight: 600;
+}
+
+.project-image {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/martell.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.each-project-content {
+  padding: 30px;
+}
+.each-project-content .row .col-md-10 .topic {
+  display: flex;
+}
+.each-project-content .row .col-md-10 .topic h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.each-project-content .row .col-md-10 .topic img {
+  margin-left: auto;
+  margin-right: 70px;
+  margin-bottom: 10px;
+}
+.each-project-content .row .col-md-10 p {
+  font-weight: 400;
+  line-height: 35px;
+}
+
+/*# sourceMappingURL=style.style.css.map */

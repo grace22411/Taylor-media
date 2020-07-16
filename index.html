@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -65,8 +64,7 @@
             
 
         </div>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-2aa946b4-6d20-4602-b361-3ec4f8699cfd"></div>
+    
     </section>
 
     <div class="what-we-offer">
@@ -106,9 +104,9 @@
         </div>
         <div class="row">
             <div class="col-md-6 wow slideInLeft">
-                <a href="">
+                <a href="shemeansbusiness.html">
                     <div class="project-content">
-                        <div class="image" style=" background-image:url(images/africa.png)">
+                        <div class="image" style=" background-image:url(images/Afua-Osei-Co-founder-She-Leads-Africa.jpg)">
                             <div class="texted">
                                 <p>Facebook Africa “She means business’</p>
 
@@ -131,6 +129,7 @@
                 </a>
             </div>
             <div class="col-md-6 wow slideInRight">
+                <a href="castrol.html">
                 <div class="project-content">
                     <div class="image" style=" background-image:url(images/british.png)">
                         <div class="texted">
@@ -139,8 +138,10 @@
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
             <div class="col-md-6 wow bounceInUp">
+                <a href="flytime.html">
                 <div class="project-content">
                     <div class="image" style=" background-image:url(images/flytime.png);">
                         <div class="texted">
@@ -149,26 +150,31 @@
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
             <div class="col-md-6 wow zoomInLeft">
+                <a href="zKitchen.html">
                 <div class="project-content">
-                    <div class="image" style="background-image:url(images/nigeria.png);">
+                    <div class="image" style="background-image:url(images/kitc.jpg);">
                         <div class="texted">
-                            <p>Future <br> Nigeria</p>
+                            <p>Z kitchen</p>
 
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
             <div class="col-md-6 wow bounceInUp">
+                <a href="kwao.html">
                 <div class="project-content">
-                    <div class="image" style=" background-image:url(images/kwao.png)">
+                    <div class="image" style=" background-image:url(images/kwao.jpg)">
                         <div class="texted">
                             <p>Philomena Kwao </p>
 
                         </div>
                     </div>
                 </div>
+            </a>
             </div>
         </div>
     </div>
@@ -196,12 +202,28 @@
                         excellent brand delivery </p>
                     <h2 class="author">- Ama Peters <br> <span>Vision Opticals</span></h2>
                 </div>
+                <div class="mySlides animated fadeIn">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bukky and her team have a wealth of real world experience in Strategic Communications, Media Relations and Social and Corporate PR, working with a range of brands from global giants to start-ups that you just don’t find at many agencies. Her honest, no-nonsense approach is always refreshing and I value her opinion. This partnership has been beneficial to Ceceyara Foundation and we would recommend her services to anyone looking for a solid PR strategy that makes an impact.</p>
+                    <h2 class="author">- Mrs. Bola Tinubu <br> <span>Cece Yara Foundation</span></h2>
+                </div>
+                <div class="mySlides animated fadeIn">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The ROBERT TAYLOR MEDIA team quickly became an extension of the Tropics Business Summit (South Africa) brand in Nigeria. We expected a professional, yet no-frills approach and instead they exceeded our expectations.
+                        By elevating our brand and message in West Africa, they were able to attract partners and support and in doing so, helped reach a 10 fold return on investment – simply by working smart and truly understanding our unique position in the business networks and events space.
+                        ROBERT TAYLOR MEDIA is a team of specialists and thought leaders in their industry. Partnering with them has been a joy!
+                        THANK YOU HEAPS !</p>
+                    <h2 class="author">- Venicia Guinot <br> <span>President & Founder<br>
+                        Tropics Business Summit</span></h2>
+                </div>
             </div>
 
             <!-- Dots/bullets/indicators -->
             <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
 
         </div>
@@ -245,6 +267,9 @@
 
 
     <script>
+        
+        var autoswitch = true;
+        var autoswicth_speed = 5000;
         var slideIndex = 1;
         showSlides(slideIndex);
 
@@ -255,7 +280,6 @@
 
         function currentSlide(n) {
             showSlides(slideIndex = n);
-            setTimeout(showSlides, 2000);
         }
 
         function showSlides(n) {
@@ -274,6 +298,8 @@
             dots[slideIndex - 1].className += " active";
 
         }
+            setInterval(currentSlide,autoswicth_speed);
+        
 
 
     </script>
@@ -286,5 +312,4 @@
         new WOW().init();
     </script>
 </body>
-
 </html>

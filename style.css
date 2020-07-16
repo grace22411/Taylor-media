@@ -503,6 +503,7 @@ section .caption h2 {
 }
 @media only screen and (max-width: 320px) {
   .contact {
+    background-size: contain;
     height: 350px;
   }
   .contact .container {
@@ -511,6 +512,7 @@ section .caption h2 {
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
   .contact {
+    background-size: contain;
     height: 350px;
   }
   .contact .container {
@@ -519,6 +521,7 @@ section .caption h2 {
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
   .contact {
+    background-size: contain;
     height: 380px;
   }
   .contact .container {
@@ -673,9 +676,9 @@ section .caption h2 {
   margin-bottom: 40px;
 }
 .testimony {
-  height: 520px;
+  height: auto;
   background-color: #FAFAFA;
-  padding-top: 40px;
+  padding: 40px 0;
 }
 .testimony h2 {
   text-align: center;
@@ -840,6 +843,18 @@ footer .container .row .col-md-3 a > i {
   border-radius: 100%;
   margin-right: 15px;
   margin-bottom: 20px;
+}
+footer .container .row .col-md-3 a .fa-facebook-f {
+  padding: 6px 9px !important;
+}
+footer .container .row .col-md-3 a .fa-instagram {
+  padding: 6px 7px;
+}
+footer .container .row .col-md-3 a .fa-linkedin-in {
+  padding: 6px 7px;
+}
+footer .container .row .col-md-3 a .fa-youtube {
+  padding: 6px 5px;
 }
 footer .container .post-footer {
   display: flex;
@@ -1081,6 +1096,21 @@ footer .container .post-footer p a {
   color: rgba(0, 0, 0, 0.58);
   font-weight: 600;
 }
+@media only screen and (max-width: 320px) {
+  .project-title h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .project-title h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .project-title h1 {
+    font-size: 35px;
+  }
+}
 
 .project-image {
   width: 100%;
@@ -1088,6 +1118,21 @@ footer .container .post-footer p a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/martell.png);
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 320px) {
+  .project-image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .project-image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .project-image {
+    height: 400px;
+  }
 }
 
 .each-project-content {
@@ -1109,6 +1154,24 @@ footer .container .post-footer p a {
 .each-project-content .row .col-md-10 p {
   font-weight: 400;
   line-height: 35px;
+}
+@media only screen and (max-width: 320px) {
+  .each-project-content .row .col-md-10 .topic h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .each-project-content .row .col-md-10 p {
+    line-height: 27px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .each-project-content .row .col-md-10 .topic h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .each-project-content .row .col-md-10 p {
+    line-height: 27px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

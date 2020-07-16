@@ -554,12 +554,14 @@ section{
         }
     }
     @media only screen and (max-width:320px){
+        background-size: contain;
         height:350px;
         .container{
             padding-top:150px;
         }
     }
     @media only screen and (min-width:321px) and (max-width:540px){
+        background-size: contain;
         height:350px;
         .container{
             padding-top:150px;
@@ -567,6 +569,7 @@ section{
     
     }
     @media only screen and (min-width:541px) and (max-width:720px){
+        background-size: contain;
         height:380px;
         .container{
             padding-top:180px;
@@ -738,9 +741,9 @@ section{
 
 
 .testimony{
-    height:520px;
+    height:auto;
     background-color: #FAFAFA;
-    padding-top:40px;
+    padding:40px 0;
     h2{
         text-align: center;
         font-size:30px;
@@ -916,6 +919,20 @@ footer{
                     margin-right: 15px;
                     margin-bottom: 20px;
 
+                }
+                a{
+                    .fa-facebook-f{
+                        padding:6px 9px !important;
+                    }
+                    .fa-instagram{
+                        padding: 6px 7px;
+                    }
+                    .fa-linkedin-in{
+                        padding: 6px 7px;
+                    }
+                    .fa-youtube{
+                        padding:6px 5px;
+                    }
                 }
             }
         }
@@ -1180,6 +1197,21 @@ footer{
         color: rgba(0, 0, 0, 0.58);
         font-weight: 600;
     }
+    @media only screen and (max-width:320px){
+        h1{
+            font-size:30px;
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        h1{
+            font-size:30px;
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        h1{
+            font-size:35px;
+        }
+    }
 }
 .project-image{
     width:100%;
@@ -1187,6 +1219,15 @@ footer{
     background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(images/martell.png);
     background-size:cover;
     background-position: center;
+    @media only screen and (max-width:320px){
+        height: 300px;
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        height: 300px;
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+        height: 400px;
+    }
 }
 
 .each-project-content{
@@ -1213,10 +1254,38 @@ footer{
         }
     }
     @media only screen and (max-width:320px){
-
+        .row{
+            .col-md-10{
+                .topic{
+                    h2{
+                        font-size:15px;
+                    font-weight: 600;
+                    }
+                    
+                }
+                
+                p{
+                    line-height: 27px;
+                }
+            }
+        }
     }
     @media only screen and (min-width:321px) and (max-width:540px){
-
+        .row{
+            .col-md-10{
+                .topic{
+                    h2{
+                        font-size:15px;
+                        font-weight: 600;
+                    }
+                    
+                }
+                
+                p{
+                    line-height: 27px;
+                }
+            }
+        }
     }
     @media only screen and (min-width:541px) and (max-width:720px){
 
