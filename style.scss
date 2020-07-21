@@ -3,10 +3,10 @@ $theme-dark : #303d45;
 $theme-green: #7fff00;
 $ghost-white:rgba(250, 251, 253, 1);
 
-$roboto-header : 'Laila', serif;;
-$nunito-text : 'Baloo Bhai 2', cursive;
+$roboto-header : 'Oswald', sans-serif;
+$nunito-text : 'Oswald', sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Laila:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 
 h2{
@@ -723,7 +723,7 @@ section{
         margin-bottom: 50px;
     }
     .row{
-        .col-md-4{
+        .col-md-1{
             text-align: center;
             margin-bottom: 40px;;
         }
@@ -732,10 +732,10 @@ section{
 
     }
     @media only screen and (min-width:321px) and (max-width:540px){
-
+        padding:50px 30px;
     }
     @media only screen and (min-width:541px) and (max-width:720px){
-
+        padding:50px
     }
 }
 

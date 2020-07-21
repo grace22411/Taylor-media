@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Laila:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 h2 {
   color: #303d45;
   font-size: 21px;
@@ -6,11 +6,11 @@ h2 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
 }
 
 p, a, span {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
 * {
@@ -74,7 +74,7 @@ header .logo {
   float: left;
   font-size: 20px;
   color: #fff;
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   margin-left: 25px;
 }
 header .logo img {
@@ -84,7 +84,7 @@ header .logo img {
 header ul {
   float: right;
   padding-top: 10px;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 header ul li {
   list-style: none;
@@ -234,7 +234,7 @@ section .caption .caption_text {
   width: 42%;
   height: auto;
   float: right;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
   text-align: right;
   clear: both;
 }
@@ -255,7 +255,7 @@ section .caption h2 {
   font-weight: 400;
   font-size: 28px;
   text-align: right;
-  font-family: "Baloo Bhai 2", cursive !important;
+  font-family: "Oswald", sans-serif !important;
   line-height: 40px;
 }
 @media only screen and (max-width: 320px) {
@@ -327,13 +327,13 @@ section .caption h2 {
 .what-we-offer .text h2 {
   color: #303d45;
   font-weight: 500;
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 25px;
   margin-bottom: 0px;
   text-align: center;
 }
 .what-we-offer .text p {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 .what-we-offer .row {
   margin-top: 40px;
@@ -410,7 +410,7 @@ section .caption h2 {
   font-size: 21px;
   text-align: center;
   font-weight: 500;
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
 }
 .project .row .col-md-6, .project .row .col-md-3 {
   margin-bottom: 30px;
@@ -418,7 +418,7 @@ section .caption h2 {
 .project .row .col-md-6 .project-content, .project .row .col-md-3 .project-content {
   height: 350px;
   background-color: #fff;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 .project .row .col-md-6 .project-content .image, .project .row .col-md-3 .project-content .image {
   background-image: url("images/Rectangle 5.png");
@@ -495,11 +495,11 @@ section .caption h2 {
   padding-top: 200px;
 }
 .contact .container h1 {
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
 }
 .contact .container p {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 @media only screen and (max-width: 320px) {
   .contact {
@@ -530,7 +530,7 @@ section .caption h2 {
 }
 
 .theForm {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
   padding: 40px 0;
 }
 .theForm p {
@@ -570,7 +570,7 @@ section .caption h2 {
   background-color: #000;
 }
 .theForm .row .col-md-5 h2 {
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   font-size: 18px;
   text-align: center;
   margin: 10px 0;
@@ -667,14 +667,25 @@ section .caption h2 {
   padding-top: 50px;
 }
 .client h2 {
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   margin-bottom: 50px;
 }
-.client .row .col-md-4 {
+.client .row .col-md-1 {
   text-align: center;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .client {
+    padding: 50px 30px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .client {
+    padding: 50px;
+  }
+}
+
 .testimony {
   height: auto;
   background-color: #FAFAFA;
@@ -805,7 +816,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: #000;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
   padding: 60px 0 0px 0;
 }
 footer .container .row .col-md-9 {
@@ -931,7 +942,7 @@ footer .container .post-footer p a {
 }
 
 .aboutUs {
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/about.png);
   height: 500px;
 }
@@ -965,7 +976,7 @@ footer .container .post-footer p a {
 }
 
 .content-about {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
   padding: 50px 0;
 }
 .content-about p {
@@ -1007,7 +1018,7 @@ footer .container .post-footer p a {
 .client-news h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
 }
 .client-news .row .col-md-4 {
   margin-bottom: 30px;
@@ -1019,7 +1030,7 @@ footer .container .post-footer p a {
   height: 200px;
   text-align: center;
   padding: 40px 20px 0 20px;
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
 }
 .client-news .row .col-md-4 .client-project img {
   margin-bottom: 20px;
@@ -1078,11 +1089,11 @@ footer .container .post-footer p a {
 }
 .core .container .row .col-md-12 h4 {
   font-size: 14px;
-  font-family: "Laila", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
 }
 .core .container .row .col-md-12 p {
-  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Oswald", sans-serif;
   font-size: 13px;
 }
 .project-title {
