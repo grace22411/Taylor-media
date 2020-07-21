@@ -981,7 +981,7 @@ footer .container .post-footer p a {
 }
 .content-about p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 35px;
 }
 @media only screen and (max-width: 320px) {
@@ -990,7 +990,7 @@ footer .container .post-footer p a {
   }
   .content-about p {
     line-height: 25px;
-    text-align: justify;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
@@ -999,7 +999,7 @@ footer .container .post-footer p a {
   }
   .content-about p {
     line-height: 25px;
-    text-align: justify;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
@@ -1008,7 +1008,7 @@ footer .container .post-footer p a {
   }
   .content-about p {
     line-height: 25px;
-    text-align: justify;
+    text-align: left;
   }
 }
 
